@@ -1,10 +1,13 @@
-.Navbar{
+.NavBar{
+    background-color: #371046;
+    height: 97px;
+    width: 100%;
+    top: 0;
+    left: 0;
     display: flex;
-    background: transparent;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 60px;
-    background-color: blueviolet;
+    padding:10px;
 }
 
 .categories{
