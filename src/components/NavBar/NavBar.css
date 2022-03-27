@@ -1,0 +1,16 @@
+.Navbar{
+    display: flex;
+    background: transparent;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: blueviolet;
+}
+
+.categories{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+

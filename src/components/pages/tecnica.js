@@ -1,11 +1,11 @@
 import React from 'react'
 
-const DeliciaySabores = () => {
+const tecnica = () => {
     return (
         <div>
-            <h1>Esta es la página de Delicias y Sabores</h1>
+            <h1>Esta es la página  Tecnica</h1>
         </div>
     )
 }
 
-export default DeliciaySabores
+export default tecnica

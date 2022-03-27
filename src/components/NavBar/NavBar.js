@@ -1,5 +1,5 @@
-import './NavBar.css'
-import './'
+import './NavBar.css';
+
 
 const NavBar = () => {
     return (
@@ -8,7 +8,7 @@ const NavBar = () => {
                 <h3>Libregraff</h3>
             </div>
 
-            <div>
+            <div class="categories">
 
                 <button>OFERTAS</button>
                 <button>ARTÍSTICA</button>
