@@ -5,9 +5,15 @@
     top: 0;
     left: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding:10px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
 }
 
 .categories{

@@ -3,8 +3,8 @@ import './NavBar.css';
 
 const NavBar = () => {
     return (
-        <nav>
-            <div>
+        <nav className="NavBar">
+            <div class="title">
                 <h3>Libregraff</h3>
             </div>
 
