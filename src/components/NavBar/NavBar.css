@@ -2,12 +2,30 @@
     background-color: #371046;
     height: 97px;
     width: 100%;
+    max-width: 1530px;
+    overflow: hidden;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding:10px;
+    flex-wrap: wrap;
+    position: fixed;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px #08a05ca4;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+a:hover{
+    color: #08a05ca4;
+}
+li{
+    list-style: none;
 }
 
 .title{
@@ -16,10 +34,56 @@
     color: #fff;
 }
 
-.categories{
+.NavBar ul{
     display: flex;
-    justify-content: space-around;
     align-items: center;
     
 }
 
+.NavBar ul li{
+    padding: 0 1rem;
+}
+
+.NavBar ul li a{
+    font-weight: bold;
+
+}
+
+.NavBar .cart{
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.NavBar .cart box-icon{
+    width: 45px;
+    height: 45px;    
+}
+
+.NavBar .cart span{
+    position: absolute;
+    top: -1rem;
+    right: -1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #08a05ca4;
+}
+/*==============================*/
+/*=======Media queries==========*/
+/*==============================*/
+
+@media only screen and (max-width: 600px) {
+    .NavBar ul{
+        display: none;
+        
+    }
+    
+}
