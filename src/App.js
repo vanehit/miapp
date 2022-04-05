@@ -11,7 +11,7 @@ import ItemCount from './components/ItemCount/ItemCount';
 function App() {
   const [show, setShow] = useState (true)
   const handleOnAdd =(quantity) =>{
-    console.log('se agrega ${quantity}');
+    console.log('se agregaron ${quantity} productos');
   }
 
   return (
