@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import './App.css';
 import React from 'react';
 import  NavBar  from './components/NavBar/NavBar';
@@ -9,9 +9,9 @@ import ItemCount from './components/ItemCount/ItemCount';
 
 
 function App() {
-  const [show, setShow] = useState (true)
+  
   const handleOnAdd =(quantity) =>{
-    console.log('se agregaron ${quantity} productos');
+    console.log(`se agregaron ${quantity} productos`);
   }
 
   return (
