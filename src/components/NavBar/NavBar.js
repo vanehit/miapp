@@ -13,11 +13,11 @@ const NavBar = () => {
             </a>
             <div className='categories'>
 
-                <ul>
-                    <li><a href='#'>OFERTAS</a></li>
+                <ul>                   
                     <li><a href='#'>ARTÍSTICA</a></li>
-                    <li><a href='#'>TÉCNICA</a></li>
-                    <li><a href='#'>PRODUCTOS</a></li>       
+                    <li><a href='#'>COMERCIAL</a></li>
+                    <li><a href='#'>REGALERIA</a></li>
+                    <li><a href='#'>TECNOLOGIA</a></li>       
                 </ul>
             </div>
                
