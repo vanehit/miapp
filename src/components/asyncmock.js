@@ -3,35 +3,43 @@
 const products = [
     { 
         id: 1, 
-        name: 'iphone 12', 
-        price: 1000, 
-        category: 'celular', 
-        img:'https://www.apple.com/newsroom/images/product/iphone/standard/Apple_announce-iphone12pro_10132020.jpg.og.jpg?202108061040', 
+        name: 'Espatula Plastica Condor', 
+        price: 290, 
+        category: 'artistica', 
+        img:'https://www.ramospapeleria.com.ar/img/p/30987/1.jpeg?quality=95&width=490&height=350&mode=max&upscale=false&format=webp', 
         stock: 25, 
-        description:'Descripcion de Iphone 12'
+        description:'Espatula Plastica Condor Para Decoracion'
     },
     { id: 2, 
-        name: 'samsung s21', 
-        price: 800, 
-        category: 'celular', 
-        img:'https://cdn.pocket-lint.com/r/s/1200x630/assets/images/155378-phones-review-hands-on-samsung-galaxy-s21-ultra-image1-luae09ici4.JPG', 
+        name: 'Carpeta Carton A4', 
+        price: 565, 
+        category: 'Comercial', 
+        img:'https://www.ramospapeleria.com.ar/img/p/30436/1.jpeg?quality=95&width=490&height=350&mode=max&upscale=false&format=webp', 
         stock: 16, 
-        description:'Descripcion de Samsung s21'},
+        description:'Carpeta Carton A4 2 Aro 20mm Rab Azul'},
     { id: 3, 
-        name: 'Ipad 8va generacion', 
-        price: 1200, 
-        category: 'tablet', 
-        img:'https://medias.musimundo.com/medias/00406046-143516-143516-01-143516-01.jpg-size515?context=bWFzdGVyfGltYWdlc3w1MjI1MnxpbWFnZS9qcGVnfGhjMC9oYWMvMTAyODM0OTc0NTU2NDYvMDA0MDYwNDYtMTQzNTE2LTE0MzUxNl8wMS0xNDM1MTZfMDEuanBnX3NpemU1MTV8MzA0NmMzNGFhZjUwMDY2YjY5MjU0MjlkMGJlYWMxODAxZjE5ODJhZmJlOTczZThmZjE2NTQxMjU5NjE2OTA4Yw', 
+        name: 'Tyrannosaurus Rex Dna', 
+        price: 6860, 
+        category: 'regaleria', 
+        img:'https://www.ramospapeleria.com.ar/img/p/33720/1.jpeg?quality=95&width=490&height=350&mode=max&upscale=false&format=webp', 
         stock: 10, 
-        description:'Descripcion de Ipad'}
+        description:'4m-Fm002 Tyrannosaurus Rex Dna'},
+
+    { id: 4, 
+        name: 'Pad Gamer ', 
+        price: 450, 
+        category: 'tecnologia', 
+        img:'https://www.ramospapeleria.com.ar/img/p/40864/1.jpeg?quality=95&width=490&height=350&mode=max&upscale=false&format=webp', 
+        stock: 8, 
+        description:'Pad Gamer Hvmp837 Acolchonado Gamenote'}
 ]
 
 const categories = [
-    {id: 'celular', description: 'Celular'},
-    {id: 'tablet', description: 'Tablet'},
-    {id: 'notebook', description: 'Notebook'}
+    {id: 'Artistica', description: 'Espatula Plastica Condor Para Decoracion'},
+    {id: 'comercial', description: 'Carpeta Carton A4 2 Aro 20mm Rab Azul'},
+    {id: 'regaleria', description: '4m-Fm002 Tyrannosaurus Rex Dna'},
+    {id: 'tecnologia', description: 'Pad Gamer Hvmp837 Acolchonado Gamenote'}
 ]
-
 export const getCategories = () => {
     return new Promise(resolve => {
         setTimeout(() => {

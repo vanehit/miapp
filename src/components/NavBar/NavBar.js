@@ -1,11 +1,12 @@
 import './NavBar.css';
+import { Link } from 'react-router-dom';
 
 
 
 const NavBar = () => {
     return (
         <nav className='NavBar'>
-            <a href='#'>
+            <a href='/'>
 
             <div className='logo'>
                 <h3>Libregraff</h3>
@@ -14,10 +15,10 @@ const NavBar = () => {
             <div className='categories'>
 
                 <ul>                   
-                    <li><a href='#'>ARTÍSTICA</a></li>
-                    <li><a href='#'>COMERCIAL</a></li>
-                    <li><a href='#'>REGALERIA</a></li>
-                    <li><a href='#'>TECNOLOGIA</a></li>       
+                    <li><Link to="/artistica">ARTÍSTICA</Link></li>
+                    <li><Link to="/comercial">COMERCIAL</Link></li>
+                    <li><Link to="regaleria">REGALERIA</Link></li>
+                    <li><Link to="/tecnologia">TECNOLOGIA</Link></li>       
                 </ul>
             </div>
                
