@@ -5,7 +5,7 @@ const products = [
         id: 1, 
         name: 'Espatula Plastica Condor', 
         price: 290, 
-        category: 'artistica', 
+        category: 'ARTISTICA', 
         img:'https://www.ramospapeleria.com.ar/img/p/30987/1.jpeg?quality=95&width=490&height=350&mode=max&upscale=false&format=webp', 
         stock: 25, 
         description:'Espatula Plastica Condor Para Decoracion'
@@ -13,14 +13,14 @@ const products = [
     { id: 2, 
         name: 'Carpeta Carton A4', 
         price: 565, 
-        category: 'Comercial', 
+        category: 'COMERCIAL', 
         img:'https://www.ramospapeleria.com.ar/img/p/30436/1.jpeg?quality=95&width=490&height=350&mode=max&upscale=false&format=webp', 
         stock: 16, 
         description:'Carpeta Carton A4 2 Aro 20mm Rab Azul'},
     { id: 3, 
         name: 'Tyrannosaurus Rex Dna', 
         price: 6860, 
-        category: 'regaleria', 
+        category: 'REGALERIA', 
         img:'https://www.ramospapeleria.com.ar/img/p/33720/1.jpeg?quality=95&width=490&height=350&mode=max&upscale=false&format=webp', 
         stock: 10, 
         description:'4m-Fm002 Tyrannosaurus Rex Dna'},
@@ -28,17 +28,17 @@ const products = [
     { id: 4, 
         name: 'Pad Gamer ', 
         price: 450, 
-        category: 'tecnologia', 
+        category: 'TECNOLOGIA', 
         img:'https://www.ramospapeleria.com.ar/img/p/40864/1.jpeg?quality=95&width=490&height=350&mode=max&upscale=false&format=webp', 
         stock: 8, 
         description:'Pad Gamer Hvmp837 Acolchonado Gamenote'}
 ]
 
 const categories = [
-    {id: 'Artistica', description: 'Espatula Plastica Condor Para Decoracion'},
-    {id: 'comercial', description: 'Carpeta Carton A4 2 Aro 20mm Rab Azul'},
-    {id: 'regaleria', description: '4m-Fm002 Tyrannosaurus Rex Dna'},
-    {id: 'tecnologia', description: 'Pad Gamer Hvmp837 Acolchonado Gamenote'}
+    {id: 'ARTISTICA', description: 'ARTISTICA'},
+    {id: 'COMERCIAL', description: 'COMERCIAL'},
+    {id: 'REGALERIA', description: 'REGALERIA'},
+    {id: 'TECNOLOGIA', description: 'TECNOLGIA'}
 ]
 export const getCategories = () => {
     return new Promise(resolve => {

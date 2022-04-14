@@ -1,32 +1,30 @@
 import './NavBar.css';
-import { Link } from 'react-router-dom';
-
-
+import CartWidget from '../CartWidget/CartWidget'
+import { Link, NavLink } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { getCategories } from '../asyncmock'
 
 const NavBar = () => {
+    const [categories, setCategories] = useState([])
+  
+    useEffect(() => {
+      getCategories().then(categories => {
+        setCategories(categories)
+      })
+    }, [])
+  
     return (
-        <nav className='NavBar'>
-            <a href='/'>
-
-            <div className='logo'>
-                <h3>Libregraff</h3>
-            </div>
-            </a>
-            <div className='categories'>
-
-                <ul>                   
-                    <li><Link to="/artistica">ARTÍSTICA</Link></li>
-                    <li><Link to="/comercial">COMERCIAL</Link></li>
-                    <li><Link to="regaleria">REGALERIA</Link></li>
-                    <li><Link to="/tecnologia">TECNOLOGIA</Link></li>       
-                </ul>
-            </div>
-               
-            <div className='cart'>
-                <box-icon name="cart"></box-icon>
-                <span className='item__total'>0</span> 
-            </div>
-        </nav>
+        <nav className="NavBar" >
+          <Link to='/'>
+              <h3 className="title">Libregraff</h3>
+          </Link>
+          <div className="Categories">
+                { categories.map(cat => <NavLink key={cat.id} to={`/category/${cat.id}`}
+                    className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}
+                >{cat.description}</NavLink>)}
+          </div>
+        <CartWidget />
+      </nav>
     )
 }
 

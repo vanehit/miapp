@@ -16,75 +16,77 @@
     box-shadow: 0 5px 10px #0afa0a;
     z-index: 1;
 }
-a{
-    color: #fff;
+.Categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .title{
+    color:#fff;
+	  text-decoration:none;
+    align-items: center
+  }
+  .Option {
     text-decoration: none;
-    text-transform: uppercase;
-
-}
-a:hover{
-    color: #0afa0a;
-}
-li{
-    list-style: none;
-}
-
-.title{
+    border-radius: 25;
+    margin: 0 50px;
+    /* TODO */
+    width: auto;
+    padding: 12px;
     font-size: 20px;
-    font-weight: 300;
-    color: #fff;
-}
-
-.NavBar ul{
+    flex: none;
     display: flex;
-    align-items: center;
-    
-}
-
-.NavBar ul li{
-    padding: 0 1rem;
-}
-
-.NavBar ul li a{
-    font-weight: bold;
-
-}
-
-.NavBar .cart{
-    color: #fff;
-    position: relative;
-    cursor: pointer;
-}
-
-.NavBar .cart box-icon{
-    width: 45px;
-    height: 45px;    
-}
-
-.NavBar .cart span{
-    position: absolute;
-    top: -1rem;
-    right: -1.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
     justify-content: center;
-    color: #fff;
-    padding: 0rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    background-color: #0afa0a;
-}
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: none;
+    border-style: none;
+    cursor: pointer;
+    outline: inherit;
+    
+  }
+  .Option:hover{
+    color: #371046 ;
+    background:#B6CE42;
+    border-radius: 8px;
+  }
+
+  .ActiveOption {
+     text-decoration: none;
+    border-radius: 25;
+    margin: 0 50px;
+    /* TODO */
+    width: auto;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    flex: none;
+    display: flex;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: none;
+    border-style: none;
+    cursor: pointer;
+    outline: inherit;
+  }
+  
+  .ActiveOption {
+    color: #371046;
+    background-color: #B6CE42;
+  }
+ 
 /*==============================*/
 /*=======Media queries==========*/
 /*==============================*/
 
-@media only screen and (max-width: 600px) {
-    .NavBar ul{
-        display: none;
-        
-    }
-    
-}
+

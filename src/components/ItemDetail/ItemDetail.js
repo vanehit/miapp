@@ -1,7 +1,8 @@
 
 import './ItemDetail.css'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
+import { Context } from '../../App'
 
 
 
@@ -59,6 +60,8 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
     const options = [{id: 0, value: '', text: '-'}, {id: 1, value: '/', text: 'ItemListContainer'}] //{id: 2, value: '/form', text: 'Formulario'}]
     const navigate = useNavigate()
 
+    const value = useContext(Context)
+
     const handleAdd = (count) => {
         console.log('Agregar al carrito')
         setQuantity(count)
@@ -92,6 +95,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
             </section>           
             <footer className='ItemFooter'>
             <Select options={options} onSelect={handleSelect} />
+                
                 {quantity > 0 ? <Link to='/cart'>Ir al carrito</Link> : <Count onConfirm={handleAdd} stock={stock}/> } 
             </footer>
         </article>

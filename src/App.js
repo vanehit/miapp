@@ -1,6 +1,6 @@
 
 import './App.css';
-import React from 'react';
+import React, { useState, createContext } from 'react';
 import  NavBar  from './components/NavBar/NavBar';
 import 'boxicons';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
@@ -9,26 +9,28 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 
 
+export const Context = createContext ()
 
 function App() {
-  
+  const [cart, setCart] = useState([])
+
   const handleOnAdd = (quantity) => {
     console.log(`se agregaron ${quantity} productos`)
   }
 
   return (
     <div className="App">
-   
-        <BrowserRouter>
-          <NavBar />
-          <Routes path="/" element={<ItemListContainer />}>
-            <Route path='/' element={<ItemListContainer />} />
-            <Route path='/category/:categoryId' element={<ItemListContainer />} />
-            <Route path='/detail/:productId' element={<ItemDetailContainer />} />
-            <Route path='*' element={<h1>NOT FOUND 404</h1>}/>
-          </Routes>
-        </BrowserRouter>
-        
+        <Context.Provider value={{cart, setCart}}>
+          <BrowserRouter>
+            <NavBar />
+            <Routes path="/" element={<ItemListContainer />}>
+              <Route path='/' element={<ItemListContainer />} />
+              <Route path='/category/:categoryId' element={<ItemListContainer />} />
+              <Route path='/detail/:productId' element={<ItemDetailContainer />} />
+              <Route path='*' element={<h1>NOT FOUND 404</h1>}/>
+            </Routes>
+          </BrowserRouter>
+        </Context.Provider>
       </div>
   );
 }
