@@ -10,7 +10,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
 
         setTimeout(() => {
             if(isActive) {
-                setCount(10)       
+                setCount(1)       
             }
         }, 3000)
 
@@ -26,11 +26,19 @@ const ItemCount = ({initial, stock, onAdd}) => {
 
 
     const decrement = () => {
-        setCount(count - 1)
+        if (count > 0){
+            setCount(count - 1)
+            }
     }
 
     const increment = () => {
-        setCount(count + 1)
+        if (count < stock){
+             setCount(count + 1)
+         }
+    }
+
+    function onAdd () {
+        alert (`agregaste ${count} productos`)
     }
 
     console.log('Esto esta en el cuerpo del componente')
@@ -43,41 +51,5 @@ const ItemCount = ({initial, stock, onAdd}) => {
         </div>
     )
 } 
-/*const ItemCount = ({initial, stock, onAdd}) => {
-    const [count, setCount] = useState(initial)
-
-    
-
-    const decrement = () => {
-        if (count > initial){
-        setCount(count - 1)
-        }
-    }
-
-    const increment = () => {
-        if (count < stock){
-        setCount(count + 1)
-        }
-    }
-
-
-    return (
-       
-       <div className="container-count">
-           <div class="card">
-                <button className="btn" onClick={decrement}>-</button>
-                <p>{count}</p>
-                <button className="btn" onClick={increment}>+</button>
-                <a href="#">
-                    <button className="btn" onClick={() => onAdd(count)}>Agregar al Carrito</button>
-                </a>
-            </div>
-
-        </div>
-
-       
-    )
-}*/
-
 
 export default ItemCount
