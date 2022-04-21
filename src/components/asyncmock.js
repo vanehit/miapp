@@ -21,7 +21,7 @@ const products = [
     },
     { 
         id: 3, 
-        name: 'Block Brock Bauhaus Pastel Cosido Doble Oficio', 
+        name: 'Block Brock Bauhaus Pastel Oficio', 
         price: 1680, 
         category: 'artistica', 
         img:'https://www.ramospapeleria.com.ar/img/p/19609/1.jpeg?width=300&mode=max&upscale=false&format=webp&quality=90', 
@@ -91,7 +91,7 @@ const products = [
         description:'Carpeta Carton A4 2 Aro 20mm Rab Azul'
     },
     { id: 11, 
-        name: 'Carpeta Carton Oficio 2 Aro 40mm Rab Negro', 
+        name: 'Carpeta Carton Oficio 2 Rab Negro', 
         price: 565, 
         category: 'comercial', 
         img:'https://www.ramospapeleria.com.ar/img/p/30433/1.jpeg?quality=95&width=490&height=350&mode=max&upscale=false&format=webp', 
@@ -100,7 +100,7 @@ const products = [
     },
     
     { id: 12, 
-        name: 'Carpeta Cartulina 3 Solapas Rosa 240grs', 
+        name: 'Carpeta Cartulina 3 Solapas Rosa', 
         price: 95, 
         category: 'comercial', 
         img:'https://www.ramospapeleria.com.ar/img/p/27409/1.jpeg?quality=95&width=490&height=350&mode=max&upscale=false&format=webp', 

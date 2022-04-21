@@ -1,8 +1,50 @@
-.container-count{
-   
+
+
+.btn__Count {
+    width: auto;
+    padding: 12px;
+    font-size: 12px;
+    background: linear-gradient(180deg, #15e215 0%, #207e20 100%);
+    border-radius: 8px;
+    flex: none;
+    display: flex;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin-left: 50px;
+    text-decoration: none;
+    color:  #371046;
+    border: none;
+    border-style: none;
+    cursor: pointer;
+    outline: inherit;
+    margin-left: 4px;
+    margin-top: -31px;
+}
+.btn__decrement{
+    position: relative;
+    background-color: #0afa0a;
+    font-size: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #371046;
+    padding: 7px 10px;
+    left: -38px;
+    top: 33px;
+    
+}
+.btn__increment{
+    position: relative;
+    transform: translate(50%, -50%);
+    color: #371046;
+    background-color: #0afa0a;
+    font-size: 15px;
+    padding: 7px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    left: 18px;
+    top: -28px;
 }
 
 

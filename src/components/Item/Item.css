@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     color:  #15e215;
+    font-size: 25px;
 }
 
 .Info {
@@ -45,7 +46,7 @@
 }
 
 .btn{
-    display: block;
+    display: flex;
     background: linear-gradient(180deg, #15e215 0%, #207e20 100%);
     border-radius: 6px;
     text-decoration: none;
@@ -55,4 +56,5 @@
     padding: 0 5px 5px;
     position: absolute;
     text-align: center;
+    margin: auto;
 }

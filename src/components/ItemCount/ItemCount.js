@@ -44,10 +44,10 @@ const ItemCount = ({initial, stock, onAdd}) => {
     console.log('Esto esta en el cuerpo del componente')
     return(
         <div>
-            <button onClick={decrement}>-</button> 
+            <button className="btn__decrement" onClick={decrement}>-</button> 
             <p>{count}</p>
-            <button onClick={increment}>+</button>
-            <button onClick={() => onAdd(count)}>Agregar al carrito</button>
+            <button className="btn__increment" onClick={increment}>+</button>
+            <button className="btn__Count" onClick={() => onAdd(count)}>Agregar al carrito</button>
         </div>
     )
 } 
