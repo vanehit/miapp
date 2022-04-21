@@ -21,7 +21,7 @@ const ItemListContainer = (props) =>{
 
     return(
         <div>
-            <h1>{props.greeting}</h1>
+            <h1>{props.greeting}COMPRÁ DESDE CASA - ENVIOS GRATIS DE LIBREGRAFF</h1>
             <ItemList products={products}/>
         </div>
     )
