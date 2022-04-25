@@ -11,4 +11,8 @@ const ItemList = ({products}) => {
     )
 }
 
+<<<<<<< HEAD
 export default memo(ItemList, (oldProps, newProp) => {})
+=======
+export default ItemList 
+>>>>>>> origin/master
