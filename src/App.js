@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-        {/*<Context.Provider value={{cart, setCart}}>*/}
+       
         <CartContextProvider>
           <BrowserRouter>
             <NavBar />
@@ -35,7 +35,7 @@ function App() {
             </Routes>
           </BrowserRouter>
           </CartContextProvider>
-        {/*</Context.Provider>*/}
+        
       </div>
   );
 }
