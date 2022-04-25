@@ -16,12 +16,7 @@ import 'boxicons';
 
 export const Context = createContext ()
 
-function App() {
-  const [cart, setCart] = useState([])
 
-  const handleOnAdd = (quantity) => {
-    console.log(`se agregaron ${quantity} productos`)
-  }
 
   return (
     <div className="App">
