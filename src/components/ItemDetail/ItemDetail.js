@@ -40,7 +40,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                 </p>
             </section>           
             <footer className='ItemFooter'>
-                { isInCart(id) ? <Link to='/cart'>Ir al carrito</Link> : <ItemCount onAdd={handleAdd} stock={stock}/> } 
+                { isInCart(id) ? <Link to='/cart' className='btn__carrito'>Ir al carrito</Link> : <ItemCount onAdd={handleAdd} stock={stock}/> } 
             </footer>
         </article>
     )
