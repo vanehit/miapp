@@ -41,6 +41,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
             </section>           
             <footer className='ItemFooter'>
                 { isInCart(id) ? <Link to='/cart' className='btn__carrito'>Ir al carrito</Link> : <ItemCount onAdd={handleAdd} stock={stock}/> } 
+                {isInCart(id) ? <button><Link to='/cart' style={{textDecoration:'none', alignItems:'center'}}>Finalizar compra </Link></button> : "" }
             </footer>
         </article>
     )
