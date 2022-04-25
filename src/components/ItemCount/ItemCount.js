@@ -37,10 +37,6 @@ const ItemCount = ({initial, stock, onAdd}) => {
          }
     }
 
-    function onAdd () {
-        alert (`agregaste ${count} productos`)
-    }
-
     console.log('Esto esta en el cuerpo del componente')
     return(
         <div>
