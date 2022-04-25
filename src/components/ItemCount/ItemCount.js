@@ -37,7 +37,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
          }
     }
 
-    console.log('Esto esta en el cuerpo del componente')
+  
     return(
         <div>
             <button className="btn__decrement" onClick={decrement}>-</button> 
