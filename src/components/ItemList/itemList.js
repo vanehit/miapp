@@ -12,4 +12,3 @@ const ItemList = ({products}) => {
 }
 
 export default memo(ItemList, (oldProps, newProp) => {})
-
