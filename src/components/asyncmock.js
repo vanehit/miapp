@@ -155,7 +155,7 @@ const categories = [
     {id: 'artistica', description: 'ARTISTICA'},
     {id: 'comercial', description: 'COMERCIAL'},
     {id: 'regaleria', description: 'REGALERIA'},
-    {id: 'tecnologia', description: 'TECNOLGIA'}
+    {id: 'tecnologia', description: 'TECNOLOGIA'}
 ]
 export const getCategories = () => {
     return new Promise(resolve => {
