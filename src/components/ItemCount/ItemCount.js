@@ -9,7 +9,7 @@ const ItemCount = ({stock = 0, initial = 1, onAdd})=> {
             setQuantity(quantity+1)
         }
     }
-<<<<<<< HEAD
+
  
     const decrement = () => {
         if(quantity > 0) {
@@ -19,12 +19,9 @@ const ItemCount = ({stock = 0, initial = 1, onAdd})=> {
  
     if(stock === 0) {
         return <button className='btn__Count' disabled>No hay stock</button>
-    }
- 
-=======
 
-  
->>>>>>> origin/master
+    }
+
     return(
         <div align="center">          
             <table >
