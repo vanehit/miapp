@@ -196,12 +196,12 @@ const products = [
         description:'Ciencia-Cubierxpertos'
     },
     { id: 24, 
-        name: 'Arte Para Colorear Buhos Pinta Tus Propios Diseã‘os', 
+        name: 'Arte Para Colorear Buhos Pinta Tus Propios Disenos', 
         price: 750, 
         category: 'regaleria', 
         img:'https://www.ramospapeleria.com.ar/img/p/38548/1.jpeg?quality=95&width=490&height=350&mode=max&upscale=false&format=webp', 
         stock: 10, 
-        description:'Arte Para Colorear Buhos Pinta Tus Propios Diseã‘os'
+        description:'Arte Para Colorear Buhos Pinta Tus Propios Disenos'
     },
     { id: 25, 
         name: 'Snoopy- Los Verdaderos Amigos Son', 
