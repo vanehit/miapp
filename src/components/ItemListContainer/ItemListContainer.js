@@ -22,7 +22,7 @@ const ItemListContainer = () => {
         // })
 
         const collectionRef = categoryId 
-            ? query(collection(firestoreDb, 'products'), where('category', '==', categoryId), where('price', '==', 800))
+            ? query(collection(firestoreDb, 'products'), where('category', '==', categoryId), where('category', '==', categoryId))
             : query(collection(firestoreDb, 'products'), orderBy("name", "desc"), limit(3))
             // : collection(firestoreDb, 'products')
 
